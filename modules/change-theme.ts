@@ -1,4 +1,4 @@
-import { getItem, setItem } from '../scripts';
+import { getItem, setItem, setAttribute } from '../scripts';
 
 export default function changeTheme(): Record<string, string> {
   let icon: string;
@@ -14,7 +14,7 @@ export default function changeTheme(): Record<string, string> {
 
   theme = getItem('theme');
 
-  document.documentElement.setAttribute('theme', String(theme));
+  setAttribute('theme', String(theme));
 
   switch (theme) {
     case 'dark':
