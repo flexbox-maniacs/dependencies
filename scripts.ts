@@ -1,7 +1,7 @@
 /* modules */
 
-export { default as themeChanger } from './modules/change-theme';
-export { default as browserThemeGetter } from './modules/get-browser-theme';
+export { default as changeTheme } from './modules/change-theme';
+export { default as getBrowserTheme } from './modules/get-browser-theme';
 
 /* helpers */
 
