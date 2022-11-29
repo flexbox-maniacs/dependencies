@@ -1,0 +1,9 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "vitor",
+  "license": "MIT",
+  "private": true,
+  "description": "global-modules"
+}
