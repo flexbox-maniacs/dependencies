@@ -1,5 +1,5 @@
 # Github
-gitignore
+.gitignore
 
 # Package manager
 node_modules
