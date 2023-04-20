@@ -7,6 +7,8 @@ export { default as useClassName } from "./hooks/use-classname"
 export { default as getAttribute } from "./helpers/document/get-attribute"
 export { default as setAttribute } from "./helpers/document/set-attribute"
 
+export { default as throwError } from "./helpers/error/throw-error"
+
 export { default as getItem } from "./helpers/localstorage/get-item"
 export { default as setItem } from "./helpers/localstorage/set-item"
 
