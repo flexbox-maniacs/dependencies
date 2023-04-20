@@ -1,3 +1,5 @@
-export default function getAttribute(key: string) {
-  return document.documentElement.getAttribute(key);
+function getAttribute(key: string) {
+  return document.documentElement.getAttribute(key)
 }
+
+export default getAttribute

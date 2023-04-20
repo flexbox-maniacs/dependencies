@@ -1,3 +1,5 @@
-export default function getItem(key: string) {
-  return localStorage.getItem(key);
+function getItem(key: string) {
+  return localStorage.getItem(key)
 }
+
+export default getItem

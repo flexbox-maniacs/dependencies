@@ -1,30 +1,32 @@
-import { getItem, setItem, setAttribute } from '../scripts';
+import { getItem, setItem, setAttribute } from "../scripts"
 
-export default function changeTheme(): Record<string, string> {
-  let icon: string;
-  let theme = getItem('theme');
+function changeTheme(): Record<string, string> {
+  let icon: string
+  let theme = getItem("theme")
 
   switch (theme) {
-    case 'dark':
-      setItem('theme', 'light');
-      break;
+    case "dark":
+      setItem("theme", "light")
+      break
     default:
-      setItem('theme', 'dark');
+      setItem("theme", "dark")
   }
 
-  theme = getItem('theme');
+  theme = getItem("theme")
 
-  setAttribute('theme', String(theme));
+  setAttribute("theme", String(theme))
 
   switch (theme) {
-    case 'dark':
-      icon = 'light_mode';
-      break;
+    case "dark":
+      icon = "light_mode"
+      break
     default:
-      icon = 'dark_mode';
+      icon = "dark_mode"
   }
 
   return {
     icon: icon,
-  };
+  }
 }
+
+export default changeTheme
