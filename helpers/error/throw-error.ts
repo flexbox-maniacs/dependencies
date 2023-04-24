@@ -1,4 +1,4 @@
-function throwError(condition: string, error: string) {
+function throwError(condition: boolean, error: string) {
   if (condition) {
     throw new Error(error)
   }
