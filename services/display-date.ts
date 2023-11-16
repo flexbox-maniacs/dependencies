@@ -55,7 +55,7 @@ function displayDate(date: DateType) {
     "Dezembro",
   ]
 
-  return `${date.day} de ${months[date.month - 1]} de ${date.year}`
+  return `${date.day.toString().length < 2 ? "0" + date.day : date.day} de ${months[date.month - 1]} de ${date.year}`
 }
 
 export type { DateType }
