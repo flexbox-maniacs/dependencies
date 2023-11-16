@@ -19,4 +19,4 @@ export { default as getBrowserTheme } from "./modules/get-browser-theme"
 
 /* services */
 
-export { default as displayDate, DateType } from "./services/display-date"
+export { default as displayDate, type DateType } from "./services/display-date"
