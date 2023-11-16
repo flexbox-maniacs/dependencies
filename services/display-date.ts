@@ -57,3 +57,7 @@ function displayDate(date: DateType) {
 
   return `${date.day} de ${months[date.month - 1]} de ${date.year}`
 }
+
+export type { DateType }
+
+export default displayDate
