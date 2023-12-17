@@ -1,21 +1,23 @@
-function useClassName(
-  componentClass: Array<string | null>,
-  props?: object,
-  classList?: object
-) {
+function useClassName(componentClass: Array<string> | string, props?: object, classList?: object, className?: string) {
+  let classes: Array<string> = []
+
+  if (Array.isArray(componentClass)) {
+    classes = classes.concat(componentClass)
+  }
+
   if (props && classList) {
-    for (const key in props) {
-      if (key in classList && props[key as keyof typeof classList]) {
-        componentClass.push(classList[key as keyof typeof classList])
+    for (const key in classList) {
+      if (key in props) {
+        classes.push(classList[key])
       }
     }
   }
 
-  return componentClass
-    .filter(function (className) {
-      return className != null
-    })
-    .join(" ")
+  if (className) {
+    classes.unshift(className)
+  }
+
+  return classes.join(" ")
 }
 
 export default useClassName
