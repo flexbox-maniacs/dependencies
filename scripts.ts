@@ -1,6 +1,7 @@
 /* hooks */
 
 export { default as useClassName } from "./hooks/use-classname"
+export { default as useDefaults } from "./hooks/use-defaults"
 
 /* helpers */
 
