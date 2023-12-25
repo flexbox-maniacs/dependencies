@@ -3,7 +3,7 @@ function useClassName(componentClass: Array<string> | string, props?: object, cl
 
   if (Array.isArray(componentClass)) {
     classes = classes.concat(componentClass)
-  }
+  } else classes.push(componentClass)
 
   if (props && classList) {
     for (const key in classList) {
