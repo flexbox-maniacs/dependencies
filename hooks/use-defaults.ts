@@ -5,7 +5,7 @@ function useDefaults(propList: object, object: object) {
     props[key] = propList[key] ?? object[key]
   }
 
-  return props
+  return { ...propList, ...props }
 }
 
 export default useDefaults
