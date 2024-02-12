@@ -1,0 +1,15 @@
+@function get-color($channel, $base) {
+  $baseColor: undefined;
+
+  @if $base == "black" {
+    $baseColor: 0;
+  } @else if $base == "white" {
+    $baseColor: 255;
+  } @else {
+    @error "Parameter $base must be 'black' or 'white'.";
+  }
+
+  $colorChannel: $baseColor + $channel;
+
+  @return ($colorChannel, $colorChannel, $colorChannel);
+}

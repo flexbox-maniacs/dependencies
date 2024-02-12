@@ -1,4 +1,4 @@
-import { getItem, setItem, setAttribute } from "../scripts"
+import { getItem, setItem, setAttribute } from "../dependencies"
 
 function changeTheme(): Record<string, string> {
   let icon: string

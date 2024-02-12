@@ -1,4 +1,4 @@
-function throwError(condition: boolean, error: string) {
+function throwError(condition: boolean | undefined, error: string) {
   if (condition) {
     throw new Error(error)
   }

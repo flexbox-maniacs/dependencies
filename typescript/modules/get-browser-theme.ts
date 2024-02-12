@@ -1,4 +1,4 @@
-import { getItem, setItem, getAttribute, setAttribute } from "../scripts"
+import { getItem, setItem, getAttribute, setAttribute } from "../dependencies"
 
 function getBrowserTheme(): Record<string, string> {
   let icon: string

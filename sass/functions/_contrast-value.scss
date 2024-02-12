@@ -1,0 +1,13 @@
+@use "sass:list";
+
+@function contrast-color($color, $multiplier) {
+  $red: list.nth($color, 1);
+  $green: list.nth($color, 2);
+  $blue: list.nth($color, 3);
+
+  $contrasted-red: $red + (6 * $multiplier);
+  $contrasted-green: $green + (6 * $multiplier);
+  $contrasted-blue: $blue + (6 * $multiplier);
+
+  @return ($contrasted-red, $contrasted-green, $contrasted-blue);
+}
