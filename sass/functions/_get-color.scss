@@ -11,5 +11,5 @@
 
   $colorChannel: $baseColor + $channel;
 
-  @return ($colorChannel, $colorChannel, $colorChannel);
+  @return ($colorChannel $colorChannel $colorChannel);
 }
